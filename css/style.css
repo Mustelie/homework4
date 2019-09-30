@@ -26,9 +26,10 @@ nav ul{
 }
 
 nav li{
-  display: horizontal;
+  display: inline-grid;
   padding-left: 20px;
-  padding-right: 20px;/*Your code here */
+  padding-right: 20px;
+  /*Your code here */
 }
 
 nav a{
@@ -81,8 +82,7 @@ footer{
 }
 .nav{
    /*Your code here */
-  align-self: left;
-  vertical-align: center;
+  vertical-align: middle;
   padding-top: 20px;
   padding-bottom: 20px;
   grid-column: 1/-1;
@@ -91,11 +91,12 @@ footer{
   background-color: #ddd;
   padding: 20px 0; 
   text-align: left; 
+  margin: 0 auto;
 }
 
 header{
   background-attachment: fixed; /* Parallax effect */
-  background-image: url(../images/header.jpg);      /* Your code here - Link to header.jpg in the images folder */
+  background-image: url("../images/header.jpg");      /* Your code here - Link to header.jpg in the images folder */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
@@ -103,6 +104,8 @@ header{
   height: 400px;                /* Parallax effect */
 
   /*Your code here - cover the entire row*/
+  grid-row: 2/auto;
+  grid-column: 1/-1;
 }
 
 header p{
@@ -116,7 +119,7 @@ header p{
   grid-column: 1/-1;
   grid-row: 3/auto;
   max-height: 700px;
-  background-image: url(../images/contact.jpg);
+  background-image: url('../images/about.jpg');
   overflow: hidden;
   /*Your code here */
 
@@ -132,7 +135,7 @@ header p{
   grid-column: 1/-1;
   grid-row: 4/auto;
   max-height: 700px;
-  background-image: url(../images/contact.jpg);
+  background-image: url('../images/method.jpg');
   overflow: hidden;
   /*Your code here */
 }
@@ -147,7 +150,7 @@ header p{
   grid-column: 1/-1;
   grid-row: 5/auto;
   max-height: 700px;
-  background-image: url(../images/contact.jpg);
+  background-image: url(../images/clients.jpg);
   overflow: hidden;
 }
 
@@ -161,7 +164,7 @@ header p{
   grid-column: 1/-1;
   grid-row: 6/auto;
   max-height: 700px;
-  background-image: url(../images/contact.jpg);
+  background-image: url('../images/contact.jpg');
   overflow: hidden;
 }
 
@@ -173,7 +176,7 @@ header p{
 
 .text-block{
   align-self: center;
-  vertical-align: center;
+  vertical-align: middle;
    /*Your code here */
   
   background-color: rgba(255, 255, 255, .8);
@@ -194,8 +197,8 @@ header p{
     background-color: #ddd;
 
      /*Your code here */
-     align-self: right;
-     vertical-align: center;
+     text-align: right;
+     vertical-align: middle;
      padding-top: 35px;
      padding-bottom: 35px;
      grid-column: 1/-1;
@@ -204,7 +207,7 @@ header p{
 
   .about-image{
      /*Your code here */
-    background-image: url(..images/about.jpg);
+    background-image: url('..images/about.jpg');
     overflow: hidden;
     max-height: 700px;
     grid-column: 2/span 2;
@@ -218,7 +221,7 @@ header p{
   }
 
   .method-image{
-    background-image: url(..images/method.jpg);
+    background-image: url('..images/method.jpg');
     overflow: hidden;
     max-height: 700px;
     grid-column: 3/span 2;
@@ -233,7 +236,7 @@ header p{
   }
 
   .clients-image{
-    background-image: url(..images/clients.jpg);
+    background-image: url('..images/clients.jpg');
     overflow: hidden;
     max-height: 700px;
     grid-column: 3/span 2;
