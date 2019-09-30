@@ -72,17 +72,21 @@ footer{
 
 
 .container{
-
-  /*Your code here  */
-
+  display: grid;
+  grid-template-columns: 100px 500px 100px; /*Your code here  */
+  grid-row-gap: 15px;
   /*Provided*/
   grid-template-rows: 30px auto auto auto auto auto 100px; 
   width: 100vw; 
 }
-
 .nav{
    /*Your code here */
-
+  align-self: left;
+  vertical-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
   /*Provided*/
   background-color: #ddd;
   padding: 20px 0; 
@@ -109,40 +113,67 @@ header p{
 }
 
 .about-image{
+  grid-column: 1/-1;
+  grid-row: 3/auto;
+  max-height: 700px;
+  background-image: url(../images/contact.jpg);
+  overflow: hidden;
   /*Your code here */
 
 }
 
 .about{
+  grid-row: 3/auto;
+  grid-column: 2/auto;
   /*Your code here */
 }
 
 .method-image{
+  grid-column: 1/-1;
+  grid-row: 4/auto;
+  max-height: 700px;
+  background-image: url(../images/contact.jpg);
+  overflow: hidden;
   /*Your code here */
 }
 
 .method{
+  grid-row: 4/auto;
+  grid-column: 2/auto;
     /*Your code here - start in the 2nd column*/
 }
 
 .clients-image{
- /*Your code here */
+  grid-column: 1/-1;
+  grid-row: 5/auto;
+  max-height: 700px;
+  background-image: url(../images/contact.jpg);
+  overflow: hidden;
 }
 
 .clients{
+  grid-row: 5/auto;
+  grid-column: 2/auto;
  /*Your code here */
 }
 
 .contact-image{
-   /*Your code here */
+  grid-column: 1/-1;
+  grid-row: 6/auto;
+  max-height: 700px;
+  background-image: url(../images/contact.jpg);
+  overflow: hidden;
 }
 
 .contact{
+  grid-row: 6/auto;
+  grid-column: 2/auto;
    /*Your code here */
 }
 
 .text-block{
-
+  align-self: center;
+  vertical-align: center;
    /*Your code here */
   
   background-color: rgba(255, 255, 255, .8);
@@ -152,7 +183,7 @@ header p{
 
 
 
-@media /*Your code here - Add the first media query.*/{
+@media screen and (min-width: 800px){
 
   .container{
     /*Your code here */
@@ -163,39 +194,73 @@ header p{
     background-color: #ddd;
 
      /*Your code here */
+     align-self: right;
+     vertical-align: center;
+     padding-top: 35px;
+     padding-bottom: 35px;
+     grid-column: 1/-1;
+     grid-row: 1/span 1;
   }
 
   .about-image{
      /*Your code here */
+    background-image: url(..images/about.jpg);
+    overflow: hidden;
+    max-height: 700px;
+    grid-column: 2/span 2;
+    grid-row: 3/auto; 
     }
 
   .about{
+    grid-column: 3/span 2;
+    grid-row: 3/auto;
     /*Your code here */
   }
 
   .method-image{
+    background-image: url(..images/method.jpg);
+    overflow: hidden;
+    max-height: 700px;
+    grid-column: 3/span 2;
+    grid-row: 4/auto; 
     /*Your code here */
   }
 
   .method{
+    grid-column: 2/span 2;
+    grid-row: 4/auto;
     /*Your code here */
   }
 
   .clients-image{
+    background-image: url(..images/clients.jpg);
+    overflow: hidden;
+    max-height: 700px;
+    grid-column: 3/span 2;
+    grid-row: 5/auto;    
     /*Your code here */
 
   }
 
   .clients{
+    grid-column: 3/span 2;
+    grid-row: 5/auto;
     /*Your code here */
   }
 
   .contact-image{
     /*Your code here */
+    background-image: url(..images/contact.jpg);
+    overflow: hidden;
+    max-height: 700px;
+    grid-column: 3/span 2;
+    grid-row: 6/auto;
   }
 
   .contact{
     /*Your code here */
+    grid-column: 2/span 2;
+    grid-row: 6/auto;
    }
 
 }  /*End the media query*/
