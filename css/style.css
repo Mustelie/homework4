@@ -190,7 +190,8 @@ header p{
 
   .container{
     /*Your code here */
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;*/
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
+    grid-template-columns: 50px auto 500px auto 50px;
   }
 
   .nav{
