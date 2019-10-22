@@ -119,7 +119,7 @@ header p{
   grid-column: 1/-1;
   grid-row: 3/auto;
   max-height: 700px;
-  background-image: url('../images/about.jpg');
+  background-image: url('../images/about.JPG');
   overflow: hidden;
   /*Your code here */
 
